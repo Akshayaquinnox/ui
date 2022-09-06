@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <title>jQuery Crud</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head> 
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2 >jQuery Crud With Local Storage</h2>
+            <h4> Insert, Update & Delete Operation</h4>
+          </div>
+          <div class="form-row">
+            <div class="col-md-3">
+              <label>Doctor Name <span class="errdiv"> *</span></label>
+              <input id="txtName" type="text"  placeholder="Enter Name" required>
+             
+            </div>
+            <br>
+            <div class="col-md-3 col-sm-6 col-6">
+                <label>Patient Name <span class="errdiv"> *</span></label>
+                <input id="txtPName"  type="text"  placeholder="Enter Patient Name" required>
+              </div>
+              <br>
+            <div class="col-md-3 col-sm-6 col-6">
+                <label>Status</label>
+                <input id="txtStatus" type="text" placeholder="Enter Status">
+            </div>
+            <br>
+            <div class="row pt-2">
+                <div class="col-md-2">
+                  <button type="button"  id="btnSave">Save</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button"  id="btnClear">Clear</button>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-12 col-sm-12 col-12 p-2 ">
+                  <table id="tblData" >
+                    <thead>
+                      <tr>
+                      
+                        <th> Doctor Name</th>
+                        <th>Patient Name</th>
+                        <th>Status</th>
+                        
+                        <th class="text-center">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td colspan="4>
+                              <div class="text-center" id="trLoader">
+                                      loading text
+                              </div>
+                          </td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+    </div>

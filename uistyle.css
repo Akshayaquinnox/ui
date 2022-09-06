@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+#button{
+    color: rgb(240, 58, 30);
+    background-color: aliceblue;
+}
+#delete{
+    color: rgb(240, 58, 30);
+    background-color: aliceblue;
+}
+#add-doctor{
+    color: rgb(240, 58, 30);
+    background-color: aliceblue;
+}
+#add-style{
+    background: -moz-linear-gradient(90,red,blue);
+}
